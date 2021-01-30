@@ -1,0 +1,6 @@
+<div class="category-wrapper container">
+  {{ $all := "All" }}
+  {{ range slice $all| append .Site.Params.Categories }}
+  <a class="btn" href="{{ if (eq . $all)}}/{{else}} /categories/{{ . | urlize }}{{end}}">{{ . }}</a>
+  {{ end }}
+</div>

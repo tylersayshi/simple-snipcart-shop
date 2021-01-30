@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <main>
+    {{ partial "collage.html" . }}
+    <section>
+      <h2>{{ .Site.Params.Products_title }}</h2>
+      {{ partial "category-selector" . }}
+      <div class="container">
+        <div class="products flex-grid">
+          <p>{{ .Site.Params.Not_found }} </p>
+        </div>
+      </div>
+      {{ partial "snipcart.html" . }}
+    </section>
+    <section>
+      <h2>{{ .Site.Params.Reviews_title }}</h2>
+      <div class="container">
+        <div class="reviews flex-grid">
+          {{ range .Site.Data.reviews.ByDate }}
+            {{partial "review.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  </main>
+{{ end }}

@@ -1,0 +1,33 @@
+<div class="product grid-item">
+  <img class="product__image" src="{{ .image }}" alt="" />
+  <div class="card-content">
+    <div class="product__titlebar">
+      <h3 class="product__name">{{ .name }}</h3>
+      <div class="product__price"><strong>${{ .price }}</strong></div>
+    </div>
+    <p class="product__description">{{ .description }}</p>
+    <div class="product__button-container">
+      <a
+        class="snipcart-add-item buy-button"
+        data-item-id="{{ .name | urlize }}"
+        data-item-name="{{ .name }}"
+        data-item-price="{{ (int .price) | lang.NumFmt 2 }}"
+        data-item-url="/"
+        data-item-image="{{ .image }}"
+        data-item-description="{{ .description }}"
+        {{ with .sizes }}
+        {{ $sizes := delimit . "|" }}
+        data-item-custom1-name="Choose a size"
+        data-item-custom1-options="{{ $sizes }}"
+        {{ end }}
+        {{ with .colors }}
+        {{ $colors := delimit . "|" }}
+        data-item-custom1-name="Choose a color"
+        data-item-custom1-options="{{ $colors }}"
+        {{ end }}
+      >
+        Add to cart
+      </a>
+    </div>
+  </div>
+</div>

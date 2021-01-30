@@ -1,0 +1,23 @@
+<header>
+  <div class="container">
+    <a href="/"><img src="{{ `images/logo.png` | relURL }}" /></a>
+    <div class="right-stuff">
+      <div class="header__cart">
+        <a href="#" class="snipcart-checkout">
+          <div class="snipcart-summary">
+            <i class="fas fa-lg fa-shopping-bag"></i>&nbsp;<span
+              class="snipcart-items-count"
+            ></span>
+            item(s)
+          </div>
+        </a>
+      </div>
+      <div class="instagram">
+        <i class="fab fa-lg fa-instagram"></i>&nbsp;<a
+          href="https://instagram.com/{{ .Site.Params.Instagram }}"
+          >{{ .Site.Params.Instagram }}</a
+        >
+      </div>
+    </div>
+  </div>
+</header>

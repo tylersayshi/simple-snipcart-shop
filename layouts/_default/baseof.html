@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{ "<!--Favicon-->" | safeHTML }}
+
+    {{ if isset .Site.Params "special_favicon" }}
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="{{ .Site.Params.special_favicon.apple_touch }}"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="{{ .Site.Params.special_favicon.fav32 }}"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="{{ .Site.Params.special_favicon.fav16 }}"
+      />
+      <link rel="manifest" href="{{ .Site.Params.special_favicon.manifest }}" />
+      <link
+        rel="mask-icon"
+        href="{{ .Site.Params.special_favicon.mask_icon }}"
+        color="{{ .Site.Params.special_favicon.mask_icon_color }}"
+      />
+      <meta
+        name="theme-color"
+        content="{{ .Site.Params.special_favicon.theme_color }}"
+      />
+      {{ else }}
+      <link rel="icon" type="image/png" href="{{ .Site.Params.favicon }}" />
+    {{ end }}
+
+    <title>{{ .Site.Title }}</title>
+    {{ with .Site.Params.description }}
+      <meta name="description" content="{{ . }}"
+    />{{ end }}
+    {{ with .Site.Params.author }}
+      <meta name="author" content="{{ . }}"
+    />{{ end }}
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{{ `styles/normalize.css` | relURL }}" />
+    <link rel="stylesheet" href="{{ `styles/typebase.css` | relURL }}" />
+    <link rel="stylesheet" href="{{ `fonts/style.css` | relURL }}" />
+    {{ $styles := resources.Get "styles/main.scss"  | toCSS | postCSS (dict "config" "./postcss.config.js") }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen" />
+    {{ with .Params.forestry_instant_preview_id }}
+      {{- safeHTML (printf "<meta property='forestry_instant_preview_id' content='%s'>" .) -}}
+    {{ end -}}
+  </head>
+  <body>
+    {{ partial "header" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer" . }}
+  </body>
+</html>
