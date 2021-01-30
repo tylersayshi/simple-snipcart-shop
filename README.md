@@ -1,31 +1,37 @@
-# Blank
+# Simple Snipcart Shop
 
-Blank — starter [Hugo](https://gohugo.io/) theme for developers. Use it to make your own theme.
+This theme is a simple, customizable, single pages marketplace designed to work with [Snipcart](https://snipcart.com)
 
-[Live Demo](https://themes.gohugo.io/theme/blank/)
+![Screenshot](https://raw.githubusercontent.com/tylerjlawson/simple-snipcart-shop/master/images/screenshot.png)
 
-![Blank theme screenshot](https://github.com/Vimux/blank/blob/master/images/splash.png)
+## Live Demo
 
-## Installation
+[Click here to see demo page](https://nikkiocrochet.github.io)
 
-In your Hugo site `themes` directory, run:
+## Features
+
+- Easy sections for selling and displaying reviews
+- PostCSS for autoprefixing
+- SCSS for easy styling
+- [Snipcart](https://snipcart.com)
+
+## Install theme on your hugo site
 
 ```
-git clone https://github.com/vimux/blank
+hugo new site your-site-name # if you already have a site ignore this line and the next
+cd your-site-name
+cd themes
+git clone https://github.com/tylerjlawson/simple-snipcart-shop.git
 ```
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `blank`.
+Once you have done this, you may use the `exampleSite` folder as an example for how to set your project up. The two main things to pay attention to is to first set this in your `config.toml` file:
 
-```
-theme = "blank"
+```toml
+theme = "simple-snipcart-shop"
 ```
 
-For more information read the official [quick start guide](https://gohugo.io/getting-started/quick-start/) of Hugo.
+Then you will need to replicate the data used in the `exampleSite/data/reviews/` if you want to show reviews. Please also see the `exampleSite/config.toml` for guidance on setting up the more general site configurations.
 
 ## Contributing
 
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/Vimux/blank/issues) to let me know. Or make directly a [pull request](https://github.com/Vimux/blank/pulls).
-
-## License
-
-This theme is released under the [MIT license](https://github.com/Vimux/blank/blob/master/LICENSE).
+Please feel free to post issues or make pull requests at any time. I am always open to collaboration.

@@ -1,0 +1,22 @@
+{
+  "name": "nocrochet",
+  "version": "1.0.0",
+  "description": "Nikki O Crochet",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2"
+  },
+  "scripts": {
+    "start": "hugo server --bind 0.0.0.0"
+  },
+  "author": "tylerjlawson",
+  "license": "MIT",
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "prettier-plugin-go-template": "0.0.11-beta",
+    "prettier": "^2.1.1"
+  }
+}

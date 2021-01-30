@@ -1,0 +1,32 @@
+baseURL = "http://example.com"
+title = "My Happy Little Shop"
+author = "John Doe"
+theme = "simple-snipcart-shop"
+contentDir = "products"
+[params]
+  instagram = "example_handle"
+  header = "Welcome to My Happy Little Shop!"
+  description = "We make stuff and things"
+  products_title = "Our stuff"
+  reviews_title = "Our reviews"
+  not_found = "Sorry, but we do not have any products in this category yet."
+  categories = [
+    "For you",
+    "For the home",
+    "For the friends"
+  ]
+  collage = [
+    "/images/collage-1.jpg",
+    "/images/collage-2.jpg",
+    "/images/collage-3.jpg",
+    "/images/collage-8.jpg",
+    "/images/collage-7.jpg",
+    "/images/collage-4.jpg",
+    "/images/collage-5.jpg",
+    "/images/collage-6.jpg"
+  ]
+  # snipcart features will not work without an api key
+  # see https://docs.snipcart.com/v3/dashboard/account-configuration#3-api-keys
+  snipcart_key = ""
+  favicon= "/images/favicon.png"
+
