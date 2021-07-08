@@ -4,10 +4,6 @@ This theme is a simple, customizable, single pages marketplace designed to work 
 
 ![Screenshot](https://raw.githubusercontent.com/tylerjlawson/simple-snipcart-shop/master/images/screenshot.png)
 
-## Live Demo
-
-[Click here to see demo page](https://nikkiocrochet.github.io)
-
 ## Features
 
 - Easy sections for selling and displaying reviews
