@@ -5,10 +5,12 @@
   "main": "postcss.config.js",
   "dependencies": {
     "autoprefixer": "^9.8.6",
+    "hugo-theme-demo-builder": "^1.0.7",
     "postcss-cli": "^7.1.2"
   },
   "scripts": {
-    "start": "hugo server --bind 0.0.0.0"
+    "start": "hugo server --bind 0.0.0.0",
+    "build": "hugo-theme-demo-builder"
   },
   "author": "tylerjlawson",
   "license": "MIT",
@@ -16,7 +18,7 @@
     "defaults"
   ],
   "devDependencies": {
-    "prettier-plugin-go-template": "0.0.11-beta",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "prettier-plugin-go-template": "0.0.11-beta"
   }
 }
