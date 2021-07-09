@@ -6,6 +6,7 @@ homepage = "https://github.com/tylerjlawson/simple-snipcart-shop"
 tags = ['ecommerce', 'simple', 'white', 'one-page', 'business']
 features = ['snipcart', 'responsive','scss','autoprefixer']
 min_version = "0.60.0"
+demosite = "https://gifted-thompson-4ca71a.netlify.app/"
 
 [author]
   name = "tylerjlawson"
