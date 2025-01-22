@@ -2,7 +2,7 @@
 
 This theme is a simple, customizable, single pages marketplace designed to work with [Snipcart](https://snipcart.com)
 
-![Screenshot](https://raw.githubusercontent.com/tylerjlawson/simple-snipcart-shop/master/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/tylersayshi/simple-snipcart-shop/master/images/screenshot.png)
 
 ## Features
 
@@ -17,7 +17,7 @@ This theme is a simple, customizable, single pages marketplace designed to work 
 hugo new site your-site-name # if you already have a site ignore this line and the next
 cd your-site-name
 cd themes
-git clone https://github.com/tylerjlawson/simple-snipcart-shop.git
+git clone https://github.com/tylersayshi/simple-snipcart-shop.git
 ```
 
 Once you have done this, you may use the `exampleSite` folder as an example for how to set your project up. The two main things to pay attention to is to first set this in your `config.toml` file:
