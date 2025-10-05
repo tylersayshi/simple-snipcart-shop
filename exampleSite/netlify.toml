@@ -1,2 +1,7 @@
-[context.production.environment]
-  HUGO_VERSION = "0.85.0"
+[build]
+  base = "exampleSite"
+
+[build.environment]
+  NODE_VERSION = "24.9.0"
+  HUGO_VERSION = "0.148.2"
+

@@ -11,7 +11,7 @@
         class="snipcart-add-item buy-button"
         data-item-id="{{ .name | urlize }}"
         data-item-name="{{ .name }}"
-        data-item-price="{{ (int .price) | lang.NumFmt 2 }}"
+        data-item-price="{{ (int .price) | lang.FormatNumber 2 }}"
         data-item-url="/"
         data-item-image="{{ .image }}"
         data-item-description="{{ .description }}"

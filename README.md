@@ -20,13 +20,13 @@ cd themes
 git clone https://github.com/tylersayshi/simple-snipcart-shop.git
 ```
 
-Once you have done this, you may use the `exampleSite` folder as an example for how to set your project up. The two main things to pay attention to is to first set this in your `config.toml` file:
+Once you have done this, you may use the `exampleSite` folder as an example for how to set your project up. The two main things to pay attention to is to first set this in your `hugo.toml` file:
 
 ```toml
 theme = "simple-snipcart-shop"
 ```
 
-Then you will need to replicate the data used in the `exampleSite/data/reviews/` if you want to show reviews. Please also see the `exampleSite/config.toml` for guidance on setting up the more general site configurations.
+Then you will need to replicate the data used in the `exampleSite/data/reviews/` if you want to show reviews. Please also see the `exampleSite/hugo.toml` for guidance on setting up the more general site configurations.
 
 ## Contributing
 
