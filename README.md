@@ -13,20 +13,41 @@ This theme is a simple, customizable, single pages marketplace designed to work 
 
 ## Install theme on your hugo site
 
+### Create site and install prerequisites
+
 ```
 hugo new site your-site-name # if you already have a site ignore this line and the next
 cd your-site-name
+npm init
+npm install -D autoprefixer
+npm install -D postcss-cli
+```
+
+### Using a local theme clone
+
+```
 cd themes
 git clone https://github.com/tylersayshi/simple-snipcart-shop.git
 ```
 
-Once you have done this, you may use the `exampleSite` folder as an example for how to set your project up. The two main things to pay attention to is to first set this in your `config.toml` file:
+### Using the theme as Hugo module
+
+```
+hugo mod init github.com/me/my-new-site
+hugo mod get github.com/tylersayshi/simple-snipcart-shop
+cat >> hugo.toml <<EOL
+[[module.imports]]
+path = "github.com/tylersayshi/simple-snipcart-shop"
+EOL
+```
+
+Once you have done this, you may use the `exampleSite` folder as an example for how to set your project up. The two main things to pay attention to is to first set this in your `hugo.toml` file:
 
 ```toml
 theme = "simple-snipcart-shop"
 ```
 
-Then you will need to replicate the data used in the `exampleSite/data/reviews/` if you want to show reviews. Please also see the `exampleSite/config.toml` for guidance on setting up the more general site configurations.
+Then you will need to replicate the data used in the `exampleSite/data/reviews/` if you want to show reviews. Please also see the `exampleSite/hugo.toml` for guidance on setting up the more general site configurations.
 
 ## Contributing
 

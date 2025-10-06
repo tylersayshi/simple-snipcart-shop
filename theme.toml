@@ -5,7 +5,7 @@ description = "Single Page online marketplace designed to work with snipcart out
 homepage = "https://github.com/tylerjlawson/simple-snipcart-shop"
 tags = ['ecommerce', 'simple', 'white', 'one-page', 'business']
 features = ['snipcart', 'responsive','scss','autoprefixer']
-min_version = "0.60.0"
+min_version = "0.110.0"
 demosite = "https://gifted-thompson-4ca71a.netlify.app/"
 
 [author]
