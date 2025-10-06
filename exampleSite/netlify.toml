@@ -4,4 +4,4 @@
 [build.environment]
   NODE_VERSION = "24.9.0"
   HUGO_VERSION = "0.148.2"
-
+  GO_VERSION = "1.25.1"
