@@ -1,5 +1,6 @@
 [build]
   base = "exampleSite"
+  command = "hugo --themesDir /opt/build --theme repo"
 
 [build.environment]
   NODE_VERSION = "24.9.0"
