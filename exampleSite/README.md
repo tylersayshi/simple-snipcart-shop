@@ -1,8 +1,16 @@
 ## Example site
 
-### Preview
+### Installation of prerequisites
 
 Inside the `exampleSite` directory, issue this command:
+
+```
+npm install
+```
+
+### Preview
+
+To get a preview of teh example site, issue this command:
 
 ```
 hugo server --themesDir ../.. --renderToMemory
